@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 """A simple API to do almost nothing"""
 import hug
+import gensim.downloader as api
+
+info = api.info()  # show info about available models/datasets
+model = api.load("glove-wiki-gigaword-50")  # download the model and return as object ready for use
+print(api.load("glove-wiki-gigaword-50", return_path=True))
 
 users = [
     {
