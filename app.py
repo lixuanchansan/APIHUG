@@ -18,7 +18,7 @@ users = [
     {
         'uid': u'ssample',
         'name': u'Sally Sample',
-        'email': u'ssample@example.com',
+        'email': u'ssampele@example.com',
         'phone': u'345-678-9012'
     }
 ]
