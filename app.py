@@ -62,13 +62,11 @@ lemmatizer = WordNetLemmatizer()
 # Input: text
 # Output: Tree JSON
 @hug.post() 
-@hug.cli()
 def getIntents(body):
     """Returns the result of parsing through nlp engine"""
     return body
 
 @hug.post() 
-@hug.cli()
 def Treeify(body):
     """Returns the result of magic"""
     return body
