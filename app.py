@@ -40,5 +40,4 @@ if __name__ == '__main__':
 @hug.cli()
 def add(text: hug.types.text, categories:hug.types.text):
     """Returns the result of adding number_1 to number_2"""
-    return text +" Cat: " +categories
-
+    return "text +"" Cat: " +categories
