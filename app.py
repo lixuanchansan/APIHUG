@@ -138,4 +138,3 @@ def query_array(input: hug.types.text):
     tree_structure = tree_structure.treefy()
 
     return tree_structure
-
