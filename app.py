@@ -61,14 +61,18 @@ lemmatizer = WordNetLemmatizer()
 
 # Input: text
 # Output: Tree JSON
+@hug.local()
+@hug.get('/users', versions=1)
+def user(user_id):
+    return 'I do nothing useful.'
+    #return user_id
+
 @hug.post() 
-@hug.cli()
 def getIntents(body):
     """Returns the result of parsing through nlp engine"""
     return body
 
 @hug.get() 
-@hug.cli()
 def query_array(input: hug.types.text):
     """Assuming input to be an array of strings"""
 
