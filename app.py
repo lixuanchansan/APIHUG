@@ -23,14 +23,14 @@ users = [
     }
 ]
 
-@hug.post('/users', versions=1)
-def user(user_id):
-    return 'I do nothing useful.'
-    #return user_id
+@hug.post()
+def getIntents(body):
+    """Returns the result of parsing through nlp engine"""
+    return body
 
 @hug.local()
-@hug.post('/users', versions=2)
-def user():
+@hug.post()
+def treeify():
     return {'users': users}
 
 if __name__ == '__main__':
